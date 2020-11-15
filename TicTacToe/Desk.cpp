@@ -47,7 +47,7 @@ void Desk::fillCell(int x, int y, char state) {
 	cells[x][y].setState(state);
 }
 
-bool Desk::checkCell(int x, int y) {
+bool Desk::checkCell(int x, int y) {	//function checks if cell is filled
 	if (cells[x][y].getState() != '-') {
 		return false;
 	}

@@ -10,7 +10,7 @@ void takeTurn(int& x, int& y) {
 		cout << "Choose between 1 and 9!\n";
 		cin >> n;
 	}
-	switch (n)
+	switch (n)	//positions of numpad keys to positions of cells on the desk
 	{
 	case 1: {
 		x = 2;
@@ -94,7 +94,7 @@ int main() {
 	} while (gameIsOn==true && turnscount<=9);
 
 	if (gameIsOn == true && turnscount > 9) {
-		cout << "\nDraw!";
+		cout << "\nDraw!\n";
 	}
 	else if (desk.checkWin('X')) {
 		cout << "\nX player wins!!\n";
